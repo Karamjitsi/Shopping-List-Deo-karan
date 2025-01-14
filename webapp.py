@@ -3,11 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Tenta carregar o arquivo CSV ou cria um DataFrame vazio
-try:
-    dados = pd.read_csv("compras.csv")
-except FileNotFoundError:
-    dados = pd.DataFrame({"produtos": [], "preços": []})
-    dados.to_csv("compras.csv", index=False)
+#try:
+    #dados = pd.read_csv("compras.csv")
+#except FileNotFoundError:
+dados = pd.DataFrame({"produtos": [], "preços": []})
+dados.to_csv("compras.csv", index=False)
 
 st.title("Controle de Compras")
 
